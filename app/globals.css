@@ -1,26 +1,76 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Global page styling */
 body {
-  background: var(--background);
-  color: var(--foreground);
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #0f172a;
+  color: #ffffff;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+/* Title */
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Textarea */
+.textarea {
+  width: 100%;
+  max-width: 600px;
+  height: 150px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.button {
+  padding: 12px 24px;
+  background-color: #2563eb;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Summary section */
+.summaryBox {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 600px;
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.summaryTitle {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.summaryText {
+  font-size: 16px;
+  line-height: 1.5;
 }

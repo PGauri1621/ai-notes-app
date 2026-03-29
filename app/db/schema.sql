@@ -1,0 +1,6 @@
+CREATE TABLE notes (
+  id SERIAL PRIMARY KEY,
+  content TEXT,
+  summary TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
